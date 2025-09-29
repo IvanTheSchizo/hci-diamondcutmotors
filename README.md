@@ -27,10 +27,14 @@ This project is a front-end implementation of a car dealership website. The prim
 
 1. Clone the repository to your local machine:
 
+    ```bash
     git clone https://github.com/hci-diamondcutmotors.git
+    ```
 
 2. Navigate to the project directory:
 
+    ```bash
     cd hci-diamondcutmotors
-
+    ```
+    
 3. Open the index.html file in your favorite web browser.
