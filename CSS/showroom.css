@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../Assets/Fonts/Orbitron-Medium.ttf");
+  font-family: "Lato";
+  src: url("../Assets/Fonts/Lato-Regular.ttf");
+}
+
+
+body {
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-image: url(../Assets/Images/Background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.icon {
+  width: 50px;
+}
+
+.icon:hover {
+  transform: scale(0.8);
+  opacity: 50%;
+  transition: transform 0.2s, opacity 0.5s;
+}
+
+hr {
+  border: 1px solid white;
+  color: white;
+}
+
+.header {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border: black;
+  border-radius: 40px;
+  background-color: black;
+  justify-content: space-around;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.footer {
+  margin: 0px;
+  display: flex;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: static;
+}
+
+.info {
+  font-family: "Orbitron";
+  font-size: 40px;
+}
+
+.footerleft {
+  float: left;
+}
+
+.footerright {
+  float: right;
+}
+
+#img {
+  margin: 5px 20px 5px 10px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+#phone {
+  font-family: "Lato";
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.top {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.visit {
+  vertical-align: middle;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-image: url(../Assets/Images/Jumbotron.jpg);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 40px;
+  font-family: "Orbitron";
+}
+
+#img {
+  width: 200px;
+}
+
+.button {
+  width: 30px;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  opacity: 50%;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.carousel-container {
+  margin-inline: auto;
+  width: 40%;
+  text-align: center;
+  width: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slider {
+  display: flex;
+  transition: transform 0.2s;
+}
+
+.carousel-slider img {
+  margin: 50px 100px 40px 100px;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 45%;
+  border-radius: 10px;
+}
+
+.gallery {
+  text-align: center;
+  width: 80%;
+  margin-inline: auto;
+  padding: 20px;
+  background-color: black;
+  border: black;
+  border-radius: 20px;
+  font-family: "Orbitron";
+  font-size: 40px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.showroomimg {
+  margin: 20px;
+  width: 500px;
+  height: 500px;
+  border: 5px solid white;
+  border-radius: 20px;
+  filter: grayscale(1);
+}
+
+.showroomimg:hover {
+  filter: grayscale(0);
+  transition: filter 0.5s;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+#img {
+  margin: 5px 20px 5px 10px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+#phone {
+  font-family: "Lato";
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.visit {
+  padding-top: 50px;
+  height: 200px;
+}
+
+@media (max-width:768px) {
+
+  body {
+    background-position: left;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 25px;
+  }
+
+  #img {
+    width: 50px;
+  }
+
+  #phone {
+    font-size: 12px;
+  }
+
+  .visit {
+    height: 150px;
+    font-size: 30px;
+  }
+}

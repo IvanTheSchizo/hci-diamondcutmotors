@@ -1,0 +1,158 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../Assets/Fonts/Orbitron-Medium.ttf");
+  font-family: "Lato";
+  src: url("../Assets/Fonts/Lato-Regular.ttf");
+}
+
+
+body {
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-image: url(../Assets/Images/Background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.icon {
+  width: 50px;
+}
+
+.icon:hover {
+  transform: scale(0.8);
+  opacity: 50%;
+  transition: transform 0.2s, opacity 0.5s;
+}
+
+.header {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border: black;
+  border-radius: 40px;
+  background-color: black;
+  justify-content: space-around;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.footer {
+  margin: 0px;
+  display: flex;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: static;
+}
+
+.info {
+  font-family: "Orbitron";
+  font-size: 40px;
+}
+
+.footerleft {
+  float: left;
+}
+
+.footerright {
+  float: right;
+}
+
+#img {
+  margin: 5px 20px 5px 10px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+#phone {
+  font-family: "Lato";
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.top {
+  text-align: center;
+  font-family: "Orbitron";
+  color: white;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.desc {
+  text-align: left;
+  font-family: "Lato";
+  color: white;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: rgb(200, 200, 200);
+}
+
+.social {
+  text-align: left;
+  color: white;
+  font-family: "Lato";
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.socialdetail {
+  padding: 10px;
+  height: 50px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.socialicon {
+  vertical-align: middle;
+  width: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid white;
+  color: white;
+}
+
+.box {
+  margin-inline: auto;
+  text-align: center;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: black;
+  border-radius: 20px;
+  padding: 20px 40px 20px;
+}
+
+@media (max-width:768px) {
+
+  body {
+    background-position: left;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 25px;
+  }
+
+  #img {
+    width: 50px;
+  }
+
+  #phone {
+    font-size: 12px;
+  }
+
+  .desc {
+    font-size: 20px;
+  }
+}

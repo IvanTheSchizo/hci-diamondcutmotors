@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Icon diambil dari https://thenounproject.com/ -->
+<!-- Desain dilakukan secara orisinil tanpa melihat website lain -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showroom</title>
+    <link rel="stylesheet" href="../CSS/showroom.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="homepage.html"><img class="icon" src="../Assets/Images/Diamond.png" alt="HOMEPAGE"></a>
+        <a href="cars.html"><img class="icon" src="../Assets/Images/Car.png" alt="CARS"></a>
+        <a href="showroom.html"><img class="icon" src="../Assets/Images/Showroom.png" alt="SHOWROOM"></a>
+        <td><a href="about.html"><img class="icon" src="../Assets/Images/About.png" alt="ABOUT"></a>
+        <td><a href="login.html"><img class="icon" src="../Assets/Images/Me.png" alt="LOGIN"></a>
+    </div>
+    <div class="top">
+        <div class="visit">
+            <img src="../Assets/Images/Diamond.png" id="img">
+            <br>
+            COME VISIT US AT OUR SHOWROOM
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="carousel-container">
+        <div class="carousel-slider">
+            <img class="showroomimg" src="../Assets/Images/Showroom2.png" alt="Showroom Image 1">
+            <img class="showroomimg" src="../Assets/Images/Showroom3.png" alt="Showroom Image 2">
+            <img class="showroomimg" src="../Assets/Images/Showroom5.png" alt="Showroom Image 3">
+        </div>
+        <br>
+        <button onclick="prev()" id="prev"><img class="button" src="../Assets/Images/Prev.png"></button>
+        <button onclick="next()" id="next"><img class="button" src="../Assets/Images/Next.png"></button>
+    </div>
+    <hr>
+    <br>
+    <div class="gallery">
+        GALLERY
+        <br>
+        <br>
+        <div class="top">
+            <img class="showroomimg" src="../Assets/Images/Showroom2.png">
+            <img class="showroomimg" src="../Assets/Images/Showroom3.png">
+            <img class="showroomimg" src="../Assets/Images/Showroom5.png">
+            <img class="showroomimg" src="../Assets/Images/Showroom6.png">
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="footer">
+        <div class="info">
+            <div class="footerleft">
+                <img id="img" src="../Assets/Images/Diamond.png">
+            </div>
+            <div class="footerright">
+                DIAMONDCUT MOTORS
+                <br>
+                <div id="phone">
+                    +61-123-123-123
+                    <br>
+                    Jl. Sultan Iskandar Muda No.27 6, RT.6/RW.1, South Jakarta City, Jakarta 12240, Indonesia
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="../JS/showroom.js"></script>
+
+</html>

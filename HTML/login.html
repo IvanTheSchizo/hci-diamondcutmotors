@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Icon diambil dari https://thenounproject.com/ -->
+<!-- Desain dilakukan secara orisinil tanpa melihat website lain -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="homepage.html"><img class="icon" src="../Assets/Images/Diamond.png" alt="HOMEPAGE"></a>
+        <a href="cars.html"><img class="icon" src="../Assets/Images/Car.png" alt="CARS"></a>
+        <a href="showroom.html"><img class="icon" src="../Assets/Images/Showroom.png" alt="SHOWROOM"></a>
+        <td><a href="about.html"><img class="icon" src="../Assets/Images/About.png" alt="ABOUT"></a>
+        <td><a href="login.html"><img class="icon" src="../Assets/Images/Me.png" alt="LOGIN"></a>
+    </div>
+    <br>
+    <br>
+
+    <form>
+        <div class="form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Input your username here">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email address must be a Gmail account">
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                placeholder="Password must contain characters and numbers">
+            <br>
+            <label for="confPass">Confirm Password</label>
+            <input type="password" id="confPass" name="confPass" placeholder="Confirm password">
+            <br>
+            <label for="number">Phone Number</label>
+            <input type="text" id="number" name="number" placeholder="Input phone number">
+            <br>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age">
+            <br>
+            <label for="location">Place of Residence</label>
+            <select name="location" id="location">
+                <option value="" hidden>Select a location</option>
+                <option value="Jakarta" selected>Jakarta</option>
+                <option value="Outside Jakarta">Outside Jakarta</option>
+            </select>
+            <br>
+            <div class="gender">
+                Gender
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label>
+            </div>
+            <br>
+        </div>
+        <div class="buttons">
+            <input type="checkbox" id="agree" name="agree">
+            <label for="agree">I agree to the terms and conditions</label>
+            <br>
+            <br><br><br>
+            <button type="reset">Clear</button>
+            <button onclick="validateField()">Sign In</button>
+        </div>
+    </form>
+    <br>
+    <div class="footer">
+        <div class="info">
+            <div class="footerleft">
+                <img id="img" src="../Assets/Images/Diamond.png">
+            </div>
+            <div class="footerright">
+                DIAMONDCUT MOTORS
+                <br>
+                <div id="phone">
+                    +61-123-123-123
+                    <br>
+                    Jl. Sultan Iskandar Muda No.27 6, RT.6/RW.1, South Jakarta City, Jakarta 12240, Indonesia
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../JS/login.js"></script>
+
+</html>

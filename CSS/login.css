@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("../Assets/Fonts/Orbitron-Medium.ttf");
+  font-family: "Lato";
+  src: url("../Assets/Fonts/Lato-Regular.ttf");
+}
+
+
+body {
+  overflow: scroll;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: overlay;
+  background-image: url(../Assets/Images/Background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.icon {
+  width: 50px;
+}
+
+.icon:hover {
+  transform: scale(0.8);
+  opacity: 50%;
+  transition: transform 0.2s, opacity 0.5s;
+}
+
+.header {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border: black;
+  border-radius: 40px;
+  background-color: black;
+  justify-content: space-around;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+}
+
+.info {
+  font-family: "Orbitron";
+  font-size: 40px;
+}
+
+.footerleft {
+  float: left;
+}
+
+.footerright {
+  float: right;
+}
+
+#img {
+  margin: 5px 20px 5px 10px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+#phone {
+  font-family: "Lato";
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+form {
+  margin-inline: auto;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  text-align: center;
+  width: 70%;
+  padding: 30px;
+}
+
+.form {
+  font-family: "Orbitron";
+  font-size: 30px;
+  margin-right: 300px;
+  text-align: right;
+}
+
+input {
+  border: 0px;
+  vertical-align: middle;
+  padding: 10px;
+  width: 350px;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+select {
+  background-color: white;
+  border: 0px;
+  padding: 5px 10px 5px 10px;
+  font-family: "Orbitron";
+  font-size: 20px;
+  margin-right: 150px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+input:focus {
+  outline: 3px solid maroon;
+}
+
+input[placeholder] {
+  font-family: "Orbitron";
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+input[type="radio"] {
+  width: fit-content;
+  text-align: center;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: fit-content;
+  outline: none;
+}
+
+input[type="number"] {
+  font-family: "Orbitron";
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  width: 100px;
+  margin-right: 250px;
+}
+
+.buttons {
+  text-align: center;
+  font-family: "Orbitron";
+  font-size: 20px;
+  margin-inline: auto;
+}
+
+button {
+  font-family: "Orbitron";
+  font-size: 30px;
+  background-color: grey;
+  margin: 0px 10px 0px 10px;
+  padding: 10px 20px 10px 20px;
+  border: 0px;
+  border-radius: 100px;
+}
+
+button:hover {
+  outline: 5px solid white;
+}
+
+.gender {
+  margin-left: 380px;
+  text-align: center;
+}
+
+@media (max-width:768px) {
+
+  body {
+    background-position: left;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .info {
+    font-size: 25px;
+  }
+
+  #img {
+    width: 50px;
+  }
+
+  #phone {
+    font-size: 12px;
+  }
+
+  form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form {
+    font-size: 20px;
+    margin-right: 50px;
+  }
+
+  .gender {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+
+  input {
+    width: 350px;
+    border-radius: 40px;
+  }
+
+  input[type="number"] {
+    margin-right: 250px;
+  }
+
+  select {
+    margin-right: 150px;
+  }
+
+}

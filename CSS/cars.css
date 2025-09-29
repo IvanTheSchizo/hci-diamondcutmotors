@@ -1,0 +1,242 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url("../Assets/Fonts/Orbitron-Medium.ttf");
+    font-family: "Lato";
+    src: url("../Assets/Fonts/Lato-Regular.ttf");
+}
+
+body {
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+    background-image: url(../Assets/Images/Background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.icon {
+    width: 50px;
+}
+
+.icon:hover {
+    transform: scale(0.8);
+    opacity: 50%;
+    transition: transform 0.2s, opacity 0.5s;
+}
+
+.button {
+    width: 30px;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    opacity: 50%;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.carousel-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slider {
+    display: flex;
+    transition: transform 0.2s;
+}
+
+.carousel-slider img {
+    width: 300px;
+    margin: 50px 100px 40px 100px;
+    transition: filter 0.5s;
+    filter: grayscale(1);
+}
+
+.carousel-slider img:hover {
+    filter: grayscale(0);
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top: 45%;
+    border-radius: 10px;
+}
+
+.brands {
+    display: inline-block;
+    color: white;
+    font-family: "Orbitron";
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.brandimg {
+    width: 300px;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.header {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border: black;
+    border-radius: 40px;
+    background-color: black;
+    justify-content: space-around;
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+.footer {
+    margin: 0px;
+    display: flex;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    position: static;
+}
+
+.info {
+    font-family: "Orbitron";
+    font-size: 40px;
+}
+
+.footerleft {
+    float: left;
+}
+
+.footerright {
+    float: right;
+}
+
+#img {
+    margin: 5px 20px 5px 10px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+#phone {
+    font-family: "Lato";
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Orbitron";
+    color: white;
+    letter-spacing: 5px;
+}
+
+hr {
+    border: 1px solid white;
+    color: white;
+}
+
+.carlist {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Lato";
+    text-align: center;
+}
+
+.slider {
+    width: 60%;
+    margin-inline: auto;
+    padding: 20px;
+    background-color: black;
+    border: black;
+    border-radius: 20px;
+    overflow: scroll;
+    font-family: "Orbitron";
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px;
+    justify-content: space-around;
+    white-space: nowrap;
+}
+
+.newcar {
+    position: sticky;
+    left: 0px;
+}
+
+.new {
+    display: inline-block;
+    font-family: "Lato";
+    font-size: 30px;
+}
+
+.newimg {
+    border: 5px solid white;
+    border-radius: 20px;
+    width: 400px;
+    transition: filter 0.5s;
+    filter: grayscale(1);
+}
+
+.newimg:hover {
+    filter: grayscale(0);
+}
+
+#last {
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width:768px) {
+
+    body {
+        background-position: left;
+    }
+
+    .slider {
+        font-size: 30px;
+        width: 90%
+    }
+
+    .new {
+        font-size: 20px;
+    }
+
+    .newimg {
+        width: 300px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .info {
+        font-size: 25px;
+    }
+
+    #img {
+        width: 50px;
+    }
+
+    #phone {
+        font-size: 12px;
+    }
+
+
+}
